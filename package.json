@@ -1,0 +1,23 @@
+{
+  "name": "02-dynamiser-vos-sites-web-avec-javascript",
+  "version": "1.0.0",
+  "description": "/* GDWFSDVSWEBAJAVAEXAIII1A_MarionBlancher : évaluation d’entraînement - Dynamiser vos sites web avec Javacript - 16.11.2022 */",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellebay/Ellebay-GDWFSDVSWEBAJAVAEXAIII1A_MarionBlancher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellebay/Ellebay-GDWFSDVSWEBAJAVAEXAIII1A_MarionBlancher/issues"
+  },
+  "homepage": "https://github.com/Ellebay/Ellebay-GDWFSDVSWEBAJAVAEXAIII1A_MarionBlancher#readme"
+}
