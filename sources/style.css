@@ -1,0 +1,236 @@
+/* -------- Body Style -------- */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: #f3e1e1;
+  color: #232323;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper{
+  display: grid; 
+  grid-template-columns:1fr 1fr;
+  min-height:100vh;
+}
+
+/* -------- Players Style -------- */
+.player-background-0, .player-background-1 {
+  text-align: center;
+}
+
+.player-name {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  color: #232323;
+  position: absolute;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.player-background-0 > .player-name {
+  left:25%;
+}
+
+.player-background-1 > .player-name {
+  left: 75%;
+}
+
+.player-total-score {
+  font-size: 3em;
+  color: #ff4757;
+  position: absolute;
+  top: 30%;
+  transform: translateX(-50%);
+}
+
+.player-background-0 > .player-total-score {
+  left:25%;
+}
+
+.player-background-1 > .player-total-score {
+  left: 75%;
+}
+
+.player-current-box {
+  background: #ff4757;
+  width: calc(100vw/6);
+  height: calc(100vh/6);
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 20%;
+}
+
+.player-background-0 > .player-current-box {
+  left:25%;
+}
+
+.player-background-1 > .player-current-box {
+  left: 75%;
+}
+
+.player-current-label{
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #232323;
+  padding-top: 20px;
+}
+
+.player-current-score{
+  font-size: 1em;
+  color: #f3e1e1;
+  padding-top: 20px;
+}
+
+/* -------- Player Style when active -------- */
+.active { 
+  background: #eca4a45b; 
+}
+
+.active .player-name { 
+  font-weight: 400; 
+}
+
+.active .player-name::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f137";
+  margin: 0px 0px 0px 10px;
+  color: #EB4D4D;
+}
+
+/* -------- Player Style when winner -------- */
+.winner { 
+  background: #eca4a45b; 
+}
+
+.winner .player-name { 
+  font-weight: 400; 
+}
+
+.winner .player-name::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f091";
+  margin: 0px 0px 0px 10px;
+  color: #EB4D4D;
+  animation-duration: 0.5s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+}
+
+/* Animate the rocket*/
+@keyframes bounce {
+  from {
+    margin: 0px 0px 0px 10px;
+  }
+  25% {
+    margin: 15px 0px 0px 10px;
+  }
+  50% {
+    margin: 30px 0px 0px 10px;
+  }
+  75% {
+    margin: 15px 0px 0px 10px;
+  }
+  to {
+    margin: 0px 0px 0px 10px;
+  }
+}
+
+
+
+/* -------- Dice Style -------- */
+img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* -------- Buttons & Icons Style -------- */
+button {
+  color: #333232;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+i {
+  color: #ff4757;
+}
+
+button:hover {
+  color: #ff4757;
+  font-weight: 400;
+}
+
+button:hover i {
+  margin-right: 10px;
+}
+
+.btn-new-game {
+  top: 30px;
+}
+
+.btn-roll {
+  bottom: 30%;
+}
+
+.btn-hold {
+  bottom: 20%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 568px) {
+button {
+  font-size: 1.5em;
+}
+.player-name {
+  font-size: 2em;
+}
+.player-total-score {
+  font-size: 4em;
+}
+.player-current-label{
+  font-size: 1em;
+}
+.player-current-score{
+  font-size:1.5em;
+}
+.player-current-box {
+  width: calc(100vw/5);
+  width: calc(100vh/5);
+}
+  }
+
+@media only screen and (max-width: 320px) {
+  button {
+    font-size: 1em;
+  }
+  .player-name {
+    font-size: 1em;
+  }
+  .player-total-score {
+    font-size: 2em;
+  }
+  .player-current-label{
+    font-size: 0.5em;
+  }
+  .player-current-score{
+    font-size: 1em;
+  }
+  .player-current-box {
+    width: calc(100vw/11);
+    width: calc(100vh/11);
+  }
+    }
