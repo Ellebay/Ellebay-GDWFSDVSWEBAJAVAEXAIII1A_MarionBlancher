@@ -5,6 +5,7 @@
     <meta name="description" content="Dice Game"/>
     <meta name="author" content="Marion Blancher">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="nofollow">
     <title>Dice Game</title>
 
     <!-- Bootstrap CSS -->
@@ -30,31 +31,31 @@
   </head>
 
   <body>
-    <div class="wrapper"> 
+    <section class="wrapper"> 
       <!-- Button "New Game" -->
       <button 
         type="button" class="btn-new-game" id="btn-new-game"><i class="fa-solid fa-circle-plus"></i> New Game
       </button>
 
       <!-- Player 1 -->
-      <div class="player-background-0 active"> 
+      <section class="player-background-0 active"> 
         <div class="player-name" id="player-name-0">Player 1</div>
         <div class="player-total-score" id="player-total-score-0">0</div>
         <div class="player-current-box box">
           <div class="player-current-label">Current</div>
           <div class="player-current-score" id="player-current-score-0">0</div>
         </div>
-      </div> 
+      </section> 
 
       <!-- Player 2 -->
-      <div class="player-background-1 "> 
+      <section class="player-background-1 "> 
         <div class="player-name" id="player-name-1">Player 2</div>
         <div class="player-total-score" id="player-total-score-1">0</div>
         <div class="player-current-box">
           <div class="player-current-label">Current</div>
           <div class="player-current-score" id="player-current-score-1">0</div>
         </div>
-      </div> 
+      </section> 
 
       <!-- Dice -->
         <img src="images/dice-1.svg" id="diceImg" alt="Die picture" width="10%">
@@ -68,7 +69,7 @@
       <button 
         type="button" class="btn-hold" id="btn-hold"><i class="fa-solid fa-download"></i> Hold
       </button>
-    </div>
+    </section>
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
