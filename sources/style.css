@@ -55,7 +55,7 @@ body {
 .player-current-box {
   background: #ff4757;
   width: calc(100vw/6);
-  height: calc(100vh/6);
+  height: calc(100vh/7);
   position: absolute;
   transform: translateX(-50%);
   bottom: 20%;
@@ -123,7 +123,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-/* Animate the rocket*/
+/* -------- Animate the rocket -------- */
 @keyframes bounce {
   from {
     margin: 0px 0px 0px 10px;
@@ -141,8 +141,6 @@ body {
     margin: 0px 0px 0px 10px;
   }
 }
-
-
 
 /* -------- Dice Style -------- */
 img {
@@ -191,27 +189,27 @@ button:hover i {
 }
 
 /* Media Queries */
-@media only screen and (min-width: 568px) {
-button {
-  font-size: 1.5em;
-}
-.player-name {
-  font-size: 2em;
-}
-.player-total-score {
-  font-size: 4em;
-}
-.player-current-label{
-  font-size: 1em;
-}
-.player-current-score{
-  font-size:1.5em;
-}
-.player-current-box {
-  width: calc(100vw/5);
-  width: calc(100vh/5);
-}
+@media only screen and (min-width: 737px) {
+  button {
+    font-size: 1.5em;
   }
+  .player-name {
+    font-size: 2em;
+  }
+  .player-total-score {
+    font-size: 4em;
+  }
+  .player-current-label{
+    font-size: 1em;
+  }
+  .player-current-score{
+    font-size:1.5em;
+  }
+  .player-current-box {
+    width: calc(100vw/5);
+    height: calc(100vh/6);
+  }
+}
 
 @media only screen and (max-width: 320px) {
   button {
@@ -230,7 +228,14 @@ button {
     font-size: 1em;
   }
   .player-current-box {
-    width: calc(100vw/11);
-    width: calc(100vh/11);
+    width: calc(100vw/6);
+    height: calc(100vh/7);
   }
-    }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 736px) and (orientation : landscape) {
+  .player-current-box {
+    width: calc(100vw/5);
+    height: calc(100vh/4);
+  }
+}
