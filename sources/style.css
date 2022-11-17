@@ -188,7 +188,7 @@ button:hover i {
   bottom: 20%;
 }
 
-/* Media Queries */
+/* -------- Media Queries -------- */
 @media only screen and (min-width: 737px) {
   button {
     font-size: 1.5em;
@@ -233,7 +233,7 @@ button:hover i {
   }
 }
 
-@media only screen and (min-width: 568px) and (max-width: 736px) and (orientation : landscape) {
+@media only screen and (min-width: 568px) and (max-width: 926px) and (orientation : landscape) {
   .player-current-box {
     width: calc(100vw/5);
     height: calc(100vh/4);
