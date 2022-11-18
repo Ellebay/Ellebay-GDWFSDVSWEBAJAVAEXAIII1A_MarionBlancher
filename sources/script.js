@@ -21,8 +21,8 @@ const images = [
     "images/dice-6.svg"
 ];
 
-/* Function New Game */
-function createNewGame () {
+/* Function new Game */
+function newGame () {
 
     /* initialize variable */
     global = [0, 0]
@@ -57,7 +57,7 @@ function createNewGame () {
     document.querySelector('.player-background-0').classList.add('active')
 }
 
-bntNewGame.addEventListener('click', createNewGame);
+bntNewGame.addEventListener('click', NewGame);
 
 function rollDice () {
     if (currentGame) {
