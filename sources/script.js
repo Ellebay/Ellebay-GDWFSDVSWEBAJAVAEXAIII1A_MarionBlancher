@@ -57,7 +57,7 @@ function newGame () {
     document.querySelector('.player-background-0').classList.add('active')
 }
 
-bntNewGame.addEventListener('click', NewGame);
+bntNewGame.addEventListener('click', newGame);
 
 function rollDice () {
     if (currentGame) {
