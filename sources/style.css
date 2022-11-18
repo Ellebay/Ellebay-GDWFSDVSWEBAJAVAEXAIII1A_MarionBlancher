@@ -206,7 +206,7 @@ button:hover i {
     font-size:1.5em;
   }
   .player-current-box {
-    width: calc(100vw/5);
+    width: calc(100vw/6);
     height: calc(100vh/6);
   }
 }
